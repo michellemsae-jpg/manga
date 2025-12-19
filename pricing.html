@@ -1,15 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About | Manga</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Manga</title>
+
   <style>
-    body {background:#000014; color:white; font-family:Arial;}
-    h1 {color:#c50000; text-align:center; margin-top:30px;}
-    p {max-width:600px; margin:20px auto; text-align:center; opacity:0.8;}
+    body {
+      margin: 0;
+      background: #000014;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    header {
+      background: #0a0a23;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #c50000;
+    }
+
+    h1 {
+      color: #c50000;
+      text-shadow: 0 0 10px #c50000;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: .7;
+    }
+
+    nav a:hover {
+      color: #c50000;
+      opacity: 1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 70px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #c50000;
+      text-shadow: 0 0 10px #c50000;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .plan-box {
+      background: #0a0a23;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #001f3f;
+      transition: 0.3s;
+    }
+
+    .plan-box:hover {
+      border: 1px solid #c50000;
+      transform: translateY(-5px);
+    }
+
+    .plan-title {
+      font-size: 22px;
+      color: #c50000;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 10px 0 20px;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 15px;
+      opacity: 0.8;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      background: #001f3f;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #c50000;
+    }
+
   </style>
 </head>
 <body>
-  <h1>ABOUT MANGA</h1>
-  <p>Manga is the future of luxury digital trading — built for speed, efficiency, and profit.</p>
+
+  <header>
+    <h1>MANGA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="tools.html">Tools</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>PRICING PLANS</h2>
+
+    <div class="plans">
+
+      <div class="plan-box">
+        <div class="plan-title">Free</div>
+        <div class="price">$0</div>
+        <div class="desc">
+          Basic tools access<br>
+          Limited dashboard view<br>
+          No automation
+        </div>
+        <button>Choose Plan</button>
+      </div>
+
+      <div class="plan-box">
+        <div class="plan-title">Standard</div>
+        <div class="price">$19/mo</div>
+        <div class="desc">
+          Full dashboard access<br>
+          Basic automation<br>
+          Priority support
+        </div>
+        <button>Choose Plan</button>
+      </div>
+
+      <div class="plan-box">
+        <div class="plan-title">Premium</div>
+        <div class="price">$49/mo</div>
+        <div class="desc">
+          Pro automation tools<br>
+          Unlimited data access<br>
+          Private indicators
+        </div>
+        <button>Choose Plan</button>
+      </div>
+
+      <div class="plan-box">
+        <div class="plan-title">Ultra</div>
+        <div class="price">$99/mo</div>
+        <div class="desc">
+          Full power access<br>
+          AI trading features<br>
+          Early feature access
+        </div>
+        <button>Choose Plan</button>
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
